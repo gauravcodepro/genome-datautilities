@@ -9,8 +9,36 @@ cat iris.csv| cut -f 1 -d "," | grep "^4"
 cat iris.csv| cut -f 1 -d "," | grep "^Pretoria" 
 # alphanumeral sort based on the end of the string
 cat iris.csv | cut -f 1 -d "," | grep "7$"
-
+# looking out for the multiple variables at one time 
+cat iris.csv | cut -f 1 -d "," | grep "7$" | grep "^4"
+# counting the number of the occurences of the specific variables present in the datsets
+cat iris.csv | cut -f 1 -d "," | grep "7$" | grep "^4" | wc -l
+# checking out the listing of the specific files in the present working directory
+for i in $(pwd)/*csv; do echo $i; done
+# checking out the listing of all the files in the present working directory
+for i in $(pwd)/*; do echo $i; done
+# iterative command loops for a dry run simply echoing the command to check how it runs
+for i in $(pwd)/*csv; do echo wc -l $i; done # on specific files
+for i in $(pwd)/*; do echo wc -l $i; done # one all the files with in the present given directory
+# running the iteration on the specific files
+for i in $(pwd)/*csv; do wc -l $i; done 
+# running the iteration on all the files 
+for i in $(pwd)/*; do wc -l $i; done
 # PBS alloc file 
+
+
+
+# SLURM alloc file 
+
+
+
+# writing a module load batch distribution to the computing blades
+
+
+
+# writing a amazon boto S3 using the bash 
+read -n "enter your boto S3:"
+
 
 
 
