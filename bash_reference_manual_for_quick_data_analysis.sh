@@ -24,6 +24,10 @@ for i in $(pwd)/*; do echo wc -l $i; done # one all the files with in the presen
 for i in $(pwd)/*csv; do wc -l $i; done 
 # running the iteration on all the files 
 for i in $(pwd)/*; do wc -l $i; done
+# printing a quick range for the iterations
+for i in {1..10}; do echo $i; done
+# printing a if statement with the range iteration 
+
 # PBS alloc file 
 
 
