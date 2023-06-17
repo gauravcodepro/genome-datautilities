@@ -26,6 +26,10 @@ for i in $(pwd)/*csv; do wc -l $i; done
 for i in $(pwd)/*; do wc -l $i; done
 # printing a quick range for the iterations
 for i in {1..10}; do echo $i; done
+# extacting all the columns starting with the particular regular expression and sorting it out and counting the unique ones
+cat iris.csv | grep "^4" | sort | uniq -c
+# 
+
 # printing a if statement with the range iteration
 
 # writing an CUDA based program for the cluster graphical processing unit 
