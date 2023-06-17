@@ -26,7 +26,11 @@ for i in $(pwd)/*csv; do wc -l $i; done
 for i in $(pwd)/*; do wc -l $i; done
 # printing a quick range for the iterations
 for i in {1..10}; do echo $i; done
-# printing a if statement with the range iteration 
+# printing a if statement with the range iteration
+
+# writing an CUDA based program for the cluster graphical processing unit 
+
+
 
 # PBS alloc file 
 
