@@ -37,3 +37,9 @@ variable=teststring
 echo ${#variable}
 #cutting the string for the variables
 echo ${#variable=-$num} # where num is how much you want to cut the string
+# sorting the specific columns based on the import
+cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2
+# sorting the specific import and then listing the required variable 
+cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "^4" # list the variable starting with the given value
+cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "^Pretoria" # list the variable starting with the given string
+cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "7$" # list the variable ending with the given conditon
