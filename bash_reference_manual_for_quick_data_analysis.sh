@@ -45,3 +45,7 @@ cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "^Pretoria" # list the var
 cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "7$" # list the variable ending with the given conditon
 # sorting out the string text in the output files and counting the occurences for the frequency table
 awk '{for(i=1;i<=NF;i++) text[$i]++} END {for(k in text) print k,text[k]}' file.txt | sort -k2 -nr
+# invoking the bash through the python interface and interactive shell in the CHPC cluster
+import os
+import subprocess
+subprocess.run("awk '{for(i=1;i<=NF;i++) a[$i]++} END {for(k in a) print k,a[k]}' genome.gff.sample.txt | sort -k2 -nr", shell=True)
