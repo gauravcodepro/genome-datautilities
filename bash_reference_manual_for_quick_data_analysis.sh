@@ -48,4 +48,5 @@ awk '{for(i=1;i<=NF;i++) text[$i]++} END {for(k in text) print k,text[k]}' file.
 # invoking the bash through the python interface and interactive shell in the CHPC cluster
 import os
 import subprocess
+os.chdir("path_to_your_dir")
 subprocess.run("awk '{for(i=1;i<=NF;i++) a[$i]++} END {for(k in a) print k,a[k]}' file.txt | sort -k2 -nr", shell=True)
