@@ -43,5 +43,5 @@ cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2
 cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "^4" # list the variable starting with the given value
 cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "^Pretoria" # list the variable starting with the given string
 cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "7$" # list the variable ending with the given conditon
-# sorting out the string text in the output files
+# sorting out the string text in the output files and counting the occurences for the frequency table
 awk '{for(i=1;i<=NF;i++) text[$i]++} END {for(k in text) print k,text[k]}' file.txt | sort -k2 -nr
