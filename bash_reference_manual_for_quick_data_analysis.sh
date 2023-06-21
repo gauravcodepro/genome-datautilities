@@ -202,3 +202,5 @@ def makepbsPATH():
                          \nPBS_NCPUS = {''.join(PBS_NCPUS)} \
                          \nPBS_COMMAND = {''.join(PBS_COMMAND)} \
                          \nPBS_MODULE = {''.join(PBS_MODULE)}")
+#fixing the brew path on your environment as issued by brew 
+sudo chown -R $(whoami) $(brew --prefix)/*
