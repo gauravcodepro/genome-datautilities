@@ -1,4 +1,9 @@
 # Quick reference lookout for working on the University of Pretoria Cluster 
+#Gaurav Sablok 
+#Senior Postdoctoral Fellow Faculty of Natural and Agricultural Sciences 
+#Room 7-35, Agricultural Sciences Building 
+#University of Pretoria, Private Bag X20 Hatfield 0028, 
+#South Africa 
 # echoing the current present working dir  
 echo $(pwd)
 # using the cut on the comma delimiter files the sample data can be found in the main directory named iris
