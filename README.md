@@ -1,5 +1,5 @@
-# genome_datascience
-This repository has been made to assist you in writing the bash based workflow and includes how to do BASH based task and how to develop and deploy workflows on the cluster. added the support for the awk and the custom awk for the sam bam files and the filtering of the indexed arrays.
+# genome-datautilities
+This repository has been made to assist you in writing the bash based analysis and includes how to develop and deploy analysis. It includes shell, awk, a little bit of C and C++. 
 
 Gaurav Sablok \
 Academic Staff Member \
