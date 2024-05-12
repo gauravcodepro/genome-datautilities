@@ -43,11 +43,11 @@ echo ${#variable=-$num} # where num is how much you want to cut the string
 cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2
 # sorting the specific import and then listing the required variable 
 cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "^4" # list the variable starting with the given value
-cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "^Pretoria" # list the variable starting with the given string
+cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "^iteration" # list the variable starting with the given string
 cat iris.csv | cut -f 1,2 -d "," | sort -k 2,2 | grep "7$" # list the variable ending with the given conditon
 # sorting out the string text in the output files and counting the occurences for the frequency table
 awk '{for(i=1;i<=NF;i++) text[$i]++} END {for(k in text) print k,text[k]}' file.txt | sort -k2 -nr
-# invoking the bash through the python interface and interactive shell in the CHPC cluster
+# invoking the bash through the python interface and interactive shell in the cluster
 import os
 import subprocess
 os.chdir("path_to_your_dir")
